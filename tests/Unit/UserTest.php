@@ -22,11 +22,12 @@ class UserTest extends TestCase
 
     }
 
-    /*public function testInstance()
+    public function testInstance()
     {
         $user = User::inRandomOrder()->first();
-        $this->assertInstanceOf('App\User' , $user);
-    }*/
+        $this->assertInternalType('string', $user->name);
+        $this->assertFinite($user->id);
+    }
 
 
 }
