@@ -34,4 +34,9 @@ class UserTest extends TestCase
         $this->assertInternalType("float", 4.2);
     }
 
+    public function testExist()
+    {
+        $this->assertFileExists('/home/hetpatel/PhpstormProjects/IS601-seeding-testing/tests/Unit/UserTest.php');
+    }
+
 }
