@@ -28,6 +28,10 @@ class UserTest extends TestCase
         $this->assertInternalType('string', $user->name);
         $this->assertFinite($user->id);
     }
-
+    public function testExample2()
+    {
+        $user = User::inRandomOrder()->first();
+        $this->assertInternalType("float", 4.2);
+    }
 
 }
